@@ -17,4 +17,5 @@ for item in dic["HeWeather6"][0]["basic"]:
     time.sleep(1)
     dic = strhtml.json()
     print(dic["HeWeather6"][0]["daily_forecast"])
-    # for item in dic["HeWeather6"][0]["daily_forecast"]
+    for item in dic["HeWeather6"][0]["daily_forecast"]:
+        print(item["tmp_max"])
